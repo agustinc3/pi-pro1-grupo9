@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+}
+
+.infogeneral {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: fit-content;
+    align-items: stretch;
+}
+
+.infogeneral .infocostado {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    gap: 5px;
+    width: 100vw;
+}
+
+
+
+.sinopsis {
+    text-align: justify;
+    width: 95vw;
+}

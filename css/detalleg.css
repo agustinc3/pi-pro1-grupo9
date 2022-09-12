@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+}
+
+.fila {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+p{text-align: center; }
