@@ -97,9 +97,33 @@ footer{
     justify-content: space-around;
     width:100%;}
   
-@media(max-width:600px){
+@media(max-width:390px){
     .footer1{
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media(max-width:390px){
+    
+    
+    li{font-size: 15px;}
+    .logo{
+        height: 100px;
+        width: 30px;
+        border-radius: 200;
+    }
+    header{
+        
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .lista1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        
     }
 }
