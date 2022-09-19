@@ -1,61 +1,92 @@
-header{
+header {
     display: flex;
     flex-direction: row;
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
     width: 100vw;
     font-family: 'Courier New', Courier, monospace;
 }
-.logo{
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.logo {
     height: 100px;
     width: 100px;
     border-radius: 86px;
 }
-.lista1{
-  display: flex;
-  justify-content:space-between;
-  flex-direction: row;
-  
- 
-  
-}
-li{
+
+.lista1 {
     display: flex;
-    background-color:red;
+    justify-content: space-between;
+    flex-direction: row;
+
+
+
+}
+
+.linav {
+    display: flex;
+    background-color: red;
     font-size: 20px;
-    
+
     ;
 }
-a{
+
+a {
     color: white;
     text-decoration: none;
 }
-nav{
+
+nav {
     width: 70vw;
 }
 
-@media(max-width:720px){
-    
-    
-    li{font-size: 15px;}
-    .logo{
+.ulpeli {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.lipeli {
+    list-style-type: none;
+}
+
+.imagenLista {
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+
+@media(max-width:720px) {
+
+
+    .linav {
+        font-size: 15px;
+    }
+
+    .logo {
         height: 100px;
         width: 30px;
         border-radius: 200;
     }
-    header{
-        
+
+    header {
+
         display: flex;
         flex-wrap: wrap;
-        
+
     }
-    .lista1{
+
+    .lista1 {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        
-        
     }
 }
-
-
