@@ -67,6 +67,12 @@ footer{
         display: flex;
         flex-direction: column;
     }
+    .fila {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    p.filatxt{text-align: left;}
 }
 
 @media(max-width:390px){
