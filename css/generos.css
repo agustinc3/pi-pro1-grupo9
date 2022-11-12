@@ -22,7 +22,15 @@ header {
 
 }
 
-li {
+.linav{
+    display: flex;
+    background-color: red;
+    font-size: 20px;
+
+    ;
+}
+
+.footer1 {
     display: flex;
     background-color: red;
     font-size: 20px;
@@ -31,7 +39,11 @@ li {
 }
 
 .generos {
-    background-color: white;
+    background-color: white
+    ;
+    font-size: large;
+    color: black;
+    font-weight: 700;
 }
 
 a {
@@ -56,6 +68,8 @@ footer {
     justify-content: space-around;
     width: 100%;
 }
+
+
 
 @media(max-width:390px) {
 

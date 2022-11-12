@@ -2,7 +2,16 @@ h1 {
     text-align: center;
 }
 
-.fila {
+.filaPeli {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.filaTv {
     display: flex;
     flex-direction: row;
     width: 100%;
