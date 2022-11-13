@@ -22,7 +22,7 @@ header {
 
 }
 
-li {
+.li {
     display: flex;
     background-color: red;
     font-size: 20px;
@@ -84,6 +84,12 @@ i {
     color: white;
 }
 
+.favorito #genero{
+    text-align: center;
+}
+
+
+
 footer {
     background-color: red;
     display: flex;
@@ -116,11 +122,6 @@ footer {
 
     .favorito {
         font-size: 8px;
-    }
-
-    #rating {
-        max-width: 25%;
-        max-height: 25%;
     }
 
     li {
