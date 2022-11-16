@@ -34,49 +34,60 @@
         <input type="text" placeholder="Buscar">
 
     </header>
-    <h1>serie</h1>
-    <!--nombre serie-->
+    <h1 class="pelicula"></h1>
+    <!--nombre pelicula-->
 
     <div class="infogeneral">
-        <article id="portada"><img src="./img/shrek-2.jpg" alt="portada">
+        <section class="portada">
             <!--foto poster-->
-        </article>
+        </section>
         <section class="infocostado">
-            <article id="rating"> <img src="./img/rating-shrek.PNG" alt=""></article>
+            <article id="rating"> </article>
             <!--foto estrellas-->
-            <article id="estreno">
-                <p>fecha</p>
+            <article>
+                <p id="estreno"></p>
                 <!--fecha de estreno-->
             </article>
+            <article>
+                <p id="duracion"></p>
+                <!--duracion-->
             </article>
         </section>
     </div>
-    <article class="sinopsis">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, esse ipsam dolor reprehenderit
-            repudiandae assumenda ratione dolore ad hic sunt voluptas, adipisci, totam eos illo odio. Unde laborum ad
-            quibusdam!
+    <section class="sinopsis">
+        <p>
         </p>
-    </article>
+    </section>
+
+    <h3>
+        Available in:
+    </h3>
+    <section>
+        <ul class="verEn">
+            
+        </ul>
+    </section>
     <section class="favorito">
-        <i class="fa-regular fa-star"></i> |
-        <a href="./detallegenero.html"> Comedia</a>
+        <i class="fa-regular fa-star">
+            </i><br><article class="fa-regular" id="genero"></article>
+
         <!--detalle link-->
     </section>
     <div>
         <footer>
             <ul class="footer1">
-                <li>
-                    Nicolas Arcusin
-                </li>
-                <li>
+                <li class="li">
                     Agustin Cagnoli
                 </li>
-                <li>
+                <li class="li">
                     Nicolas Pablo Spagnuolo
                 </li>
             </ul>
         </footer>
     </div>
+</body>
+    </div>
+<script src="./js/detalleserie.js" type="text/javascript"></script>
 </body>
 
 </html>

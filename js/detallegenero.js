@@ -51,7 +51,7 @@ fetch(urlTv)
         listaSeries=[]
         let foto_ruta = arrayDeSeries[i].poster_path
         if (generoId.includes(parseInt(idGenero))) {
-            allSeries += `<article  class="portada" ><a href="./detallepeli.html?buscador=${arrayDeSeries[i].id}"><img src="https://image.tmdb.org/t/p/w500${foto_ruta}" alt="portada"></a>
+            allSeries += `<article  class="portada" ><a href="./detalleserie.html?search_query=${arrayDeSeries[i].id}"><img src="https://image.tmdb.org/t/p/w500${foto_ruta}" alt="portada"></a>
             <p class="filatxt">${arrayDeSeries[i].name}</p>
         </article>`
         }
