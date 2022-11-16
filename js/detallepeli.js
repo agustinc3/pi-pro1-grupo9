@@ -1,7 +1,7 @@
 //buscar id
 let qs = location.search;
 let objetoqs = new URLSearchParams(qs);
-let idPeli = objetoqs.get("buscador")
+let idPeli = objetoqs.get("search_query")
 
 
 //sacar la info dinamica del html
@@ -43,7 +43,7 @@ fetch(url)
         for (let i = 0; i < qGeneros.length; i++) {
             idGenero = qGeneros[i].id
             nombreGenero = qGeneros[i].name;
-            genres += `<a href="./detallegenero.html?buscador=${idGenero}"> ${nombreGenero} </a>`
+            genres += `<a href="./detallegenero.html?search_query=${idGenero}"> ${nombreGenero} </a>`
         }
 
         //mostrar imagen y generos

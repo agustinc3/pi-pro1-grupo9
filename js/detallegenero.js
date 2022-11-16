@@ -21,16 +21,13 @@ fetch(url)
         listaPelis=[]
         let foto_ruta = arrayDePelis[i].poster_path
         if (generoId.includes(parseInt(idGenero))) {
-            allMovies += `<article  class="portada" ><a href="./detallepeli.html?buscador=${arrayDePelis[i].id}"><img src="https://image.tmdb.org/t/p/w500${foto_ruta}" alt="portada"></a>
+            allMovies += `<article  class="portada" ><a href="./detallepeli.html?search_query=${arrayDePelis[i].id}"><img src="https://image.tmdb.org/t/p/w500${foto_ruta}" alt="portada"></a>
             <p class="filatxt">${arrayDePelis[i].title}</p>
         </article>`
         }
     }
     console.log(allMovies);
     seccion.innerHTML = allMovies;
-
-    let titulo= document.querySelector('h1')
-    titulo.innerText= idGenero
 
     return data;
 }).catch(function(error) {
