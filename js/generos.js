@@ -42,7 +42,7 @@ fetch(urlTv)
 
         for(let i=0; i<generosTv.length; i++){
 
-            generosTodos += `<li class='generos'><a style="color:black" href="./detallegenero.html?search_query=${generosTv[i].id}"> ${generosTv[i].name}</a></li>`
+            generosTodos += `<li class='generos'><a style="color:black" href="./detallegenero.html?buscador=${generosTv[i].id}"> ${generosTv[i].name}</a></li>`
         }
         seccion.innerHTML = generosTodos;
 

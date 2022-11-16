@@ -79,6 +79,9 @@ footer {
     width: 100%;
 }
 
+h2{
+    text-align: center;
+}
 @media(max-width:390px) {
     .footer1 {
         display: flex;
@@ -124,5 +127,4 @@ footer {
     p {
         font-size: 10px;
     }
-
 }

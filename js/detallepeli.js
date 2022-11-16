@@ -2,7 +2,7 @@
 let qs = location.search;
 let objetoqs = new URLSearchParams(qs);
 let idPeli = objetoqs.get("buscador")
-idPeli = '550'
+
 
 //sacar la info dinamica del html
 let titulo = document.querySelector(".pelicula")
@@ -28,7 +28,7 @@ fetch(url)
         sinopsis.innerText = data.overview;
         estreno.innerText = 'Release: ' + data.release_date;
         duracion.innerText = data.runtime + ' Minutes'
-        valoracion.innerText = data.vote_average * 10 + '/100'
+        valoracion.innerText = parseInt(data.vote_average) * 10 + '/100'
 
         //buscar portada
         let portada = []
@@ -43,7 +43,7 @@ fetch(url)
         for (let i = 0; i < qGeneros.length; i++) {
             idGenero = qGeneros[i].id
             nombreGenero = qGeneros[i].name;
-            genres += `<a href="./detallegenero.html?search_query=${idGenero}"> ${nombreGenero} </a>`
+            genres += `<a href="./detallegenero.html?buscador=${idGenero}"> ${nombreGenero} </a>`
         }
 
         //mostrar imagen y generos
@@ -109,10 +109,10 @@ fav.addEventListener("click", function(e) {
     if (favoritos.includes(idPeli)) {
        let indice = favoritos.indexOf(idPeli)
        favoritos.splice(indice, 1);
-       fav.innerText = "Agregar a Fav";
+       fav.innerText = "Add";
     }else{
         favoritos.push(idPeli)
-        fav.innerText = "Quitar de favoritos"
+        fav.innerText = "Remove"
     }
     //para que quede guardado
     let favsToString = JSON.stringify(favoritos);
