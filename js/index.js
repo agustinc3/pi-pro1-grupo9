@@ -1,4 +1,4 @@
-let form        = document.querySelector('form');
+let form        = document.querySelector('formulario');
 let busqueda    = document.querySelector('#busqueda');
 
 form.addEventListener('submit', function(event) {
