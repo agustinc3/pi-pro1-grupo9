@@ -29,8 +29,6 @@ fetch(url)
 fetch(urlTv)
     .then(function(res){
         return res.json()
-    })
-    .then(function(data){
 
         console.log(data);
         let generosTv = data.genres;
