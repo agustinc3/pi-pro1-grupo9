@@ -44,15 +44,41 @@ nav {
     width: 70vw;
 }
 
-.ulpeli {
+.ulpeli1 {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.lipeli {
+.lipeli1 {
+    list-style-type: none; 
+    text-align: center;
+
+}
+
+.ulpeli2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.lipeli2 {
     list-style-type: none;
+    text-align: center;
+}
+
+.ulpeli3 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.lipeli3 {
+    list-style-type: none;
+    text-align: center;
 }
 
 .imagenLista {

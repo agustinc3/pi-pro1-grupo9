@@ -2,9 +2,9 @@ let querystring = location.search;
 let objetoquerystring = new URLSearchParams(querystring);
 let id_genero = objetoquerystring.get("search_query")
 
-let url = 'https://api.themoviedb.org/3/genre/movie/list?api_key=062d3ce7ea9819367da90034f22a527a&language=en-US';
+let urlNombre = 'https://api.themoviedb.org/3/genre/movie/list?api_key=062d3ce7ea9819367da90034f22a527a&language=en-US';
 
-fetch(url)
+fetch(urlNombre)
     .then(function(response){
         return response.json()
     })
