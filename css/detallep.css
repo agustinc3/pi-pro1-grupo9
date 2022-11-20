@@ -104,6 +104,12 @@ footer {
     width: 100%;
 }
 
+.trailer{
+    display:flex;
+    margin-left: 30%;
+}
+
+
 
 @media(max-width: 390px) {
     body {
@@ -128,6 +134,10 @@ footer {
         font-size: 15px;
     }
 
+    .trailer{
+        display:flex;
+        margin-left: 0%;
+    }
     .logo {
         height: 100px;
         border-radius: 200;

@@ -78,6 +78,9 @@ fetch(URLproveedor)
         }
         console.log(todosProveedores);
         //lo que va en el html
+        lista_proveedores+=`<h3>
+        Available in:
+    </h3>`
         for (let i = 0; i < todosProveedores.length; i++) {
             lista_proveedores += `<li>${todosProveedores[i]}</li>`
         }
