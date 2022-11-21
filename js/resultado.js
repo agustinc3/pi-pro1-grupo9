@@ -2,7 +2,7 @@ let qs= location.search
 let qsObj= new URLSearchParams(qs)
 let personaje= qsObj.get('busqueda')
 
-let url= "https://api.themoviedb.org/3/genre/movie/list?api_key=062d3ce7ea9819367da90034f22a527a&language=en-US"
+let url= `https://api.themoviedb.org/3/search/company?api_key=062d3ce7ea9819367da90034f22a527a&page=1${personaje}`
 
 fetch(url)
 .then(function(response){
