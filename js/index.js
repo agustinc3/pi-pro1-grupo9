@@ -12,4 +12,4 @@ form.addEventListener('submit', function(event) {
         this.submit();
     }
 
-})
+})  
