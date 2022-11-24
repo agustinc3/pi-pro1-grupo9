@@ -121,3 +121,5 @@ fav.addEventListener("click", function(e) {
     let favsToString = JSON.stringify(favoritos);
     localStorage.setItem("favoritos", favsToString )
 })
+
+console.log(favoritos)
